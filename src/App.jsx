@@ -35,7 +35,6 @@ function App() {
     setFilteredsearch(filtered);
     console.log(searchword);
   };
-  console.log(filteredsearch);
 
   return (
     <>
@@ -43,7 +42,7 @@ function App() {
         search={search}
         filteredsearch={filteredsearch}
         searchItemCardHandeler={searchItemCardHandeler}></Header>
-      <Home items={items} searchitem={searchitem}></Home>
+      <Home items={items}></Home>
     </>
   );
 }

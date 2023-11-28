@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Card = ({ cardinfo }) => {
   return (
     <div>
@@ -18,5 +20,7 @@ const Card = ({ cardinfo }) => {
     </div>
   );
 };
-
+Card.propTypes = {
+  cardinfo: PropTypes.object.isRequired,
+};
 export default Card;

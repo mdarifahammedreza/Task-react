@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 const Header = ({ search, filteredsearch, searchItemCardHandeler }) => {
   const handleInputChange = (e) => {
@@ -68,5 +68,9 @@ const Header = ({ search, filteredsearch, searchItemCardHandeler }) => {
     </div>
   );
 };
-
+Header.propTypes = {
+  search: PropTypes.string.isRequired,
+  filteredsearch: PropTypes.func.isRequired,
+  searchItemCardHandeler: PropTypes.func.isRequired,
+};
 export default Header;

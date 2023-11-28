@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Cards from "../../Component/Cards/Cards";
 import Items from "../../Component/Items/Items";
-
-const Home = ({ items, searchitem }) => {
+import PropTypes from "prop-types";
+const Home = ({ items }) => {
   const [cardinfo, setcardinfo] = useState({
     name: "Welcome",
     description: "tap a device to see des",
@@ -19,5 +19,7 @@ const Home = ({ items, searchitem }) => {
     </div>
   );
 };
-
+Home.propTypes = {
+  items: PropTypes.array.isRequired,
+};
 export default Home;
